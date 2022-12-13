@@ -56,7 +56,7 @@ export default function SignUp() {
       return;
     }
 
-    fetch("http://localhost:4000/user", {
+    fetch(`${process.env.REACT_APP_SERVER_URL}/user`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -97,7 +97,7 @@ export default function SignUp() {
       return;
     }
     try {
-      let res = await fetch("http://localhost:4000/update", {
+      let res = await fetch(`${process.env.REACT_APP_SERVER_URL}/update`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
