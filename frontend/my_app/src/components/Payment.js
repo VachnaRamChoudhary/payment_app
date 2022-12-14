@@ -66,6 +66,7 @@ export default function Payment() {
         .then((data) => {
           alert(data.message);
           console.log("Success:", data);
+          navigate("/");
         })
         .catch((error) => {
           console.error("Error:", error);

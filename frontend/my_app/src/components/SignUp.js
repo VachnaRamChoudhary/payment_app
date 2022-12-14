@@ -36,7 +36,7 @@ export default function SignUp() {
   const navigate = useNavigate();
 
   const Navigate = () => {
-    return navigate("/signin");
+    return navigate("/");
   };
 
   const handleSubmit = async (event) => {
